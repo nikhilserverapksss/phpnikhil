@@ -63,7 +63,7 @@ function encryptConfig($jsonData) {
 
 // Valid keys
 $validKeys = [
-    'SLOVEO-261354332176-key000000007-2126',
+    'SLOVEO-261354332176-key0004545644000007-2126',
     'S-2026',
     'keyforyouatr53325y657rnkit'
 ];
@@ -98,6 +98,7 @@ $encryptedConfig = encryptConfig(json_encode($config));
 http_response_code(200);
 echo json_encode(['status' => 'ok', 'data' => $encryptedConfig]);
 ?>
+
 
 
 
