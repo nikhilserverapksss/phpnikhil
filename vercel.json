@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.6.0"
+    }
+  },
+  "routes": [
+    {
+      "src": "/validate.php",
+      "dest": "/api/validate.php"
+    },
+    {
+      "src": "/device_log.php",
+      "dest": "/api/device_log.php"
+    }
+  ]
+}
